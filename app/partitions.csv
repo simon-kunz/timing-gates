@@ -1,0 +1,7 @@
+# 4 MB flash. NVS where the default table has it,
+# a 3 MB app (NimBLE + Wi-Fi + the uplink's HTTPS client), and the uplink's passage queue (D10).
+# Name,    Type, SubType, Offset,  Size
+nvs,       data, nvs,     0x9000,  0x6000
+phy_init,  data, phy,     0xf000,  0x1000
+factory,   app,  factory, 0x10000, 0x300000
+pqueue,    data, 0x40,    ,        0x10000
